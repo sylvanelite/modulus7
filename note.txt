@@ -1,0 +1,171 @@
+
+core engine is based on LittleJS
+https://github.com/KilledByAPixel/LittleJS (MIT)
+
+heavily modified to be instanced and use typescript 
+objects were replaced with an entity component system, based on:
+https://github.com/jprochazk/uecs (MIT)
+
+
+mode7 is based on ideas from:
+https://github.com/Cubified/mode7/blob/master/mode7_worker.js (MIT)
+
+re-implemented in webGL
+
+assets:
+sample 512x512
+https://adamatomic.itch.io/ revolution cc0
+
+moon/clouds:
+https://opengameart.org/content/clouds cc0
+https://opengameart.org/content/earths-moon-photomanip cc0
+
+terrain:
+https://dgbaumgart.itch.io/hex-and-tile-terrain-sample-set
+    Terms
+
+    You can use these to make a free or commercial video game, printed board game, or similar media project.
+
+    You can modify and remix these tiles to use in your projects.
+    You can not use these assets to "train" image generation datasets.
+    You can't repackage them and give them away on their own, sell them on their own, or sell them in another asset pack.
+    Credit to "David Baumgart" and, if you like, a link to dgbaumgart.com is appreciated.
+
+ships:
+https://pixel-by-pixel.itch.io/alcwilliam-space-ship-pack
+	Free for commercial use.
+
+
+music:
+https://hydrogene.itch.io/high-quality-16-bit-music cc0
+
+sound FX (little JS)
+https://killedbyapixel.github.io/ZzFX/
+
+help with shaders:
+https://glsl.app/
+
+
+//-----== TODOS:
+
+put ship on screen
+
+ui popup for crate selection
+
+juice:
+screen shake on shoot
+kickback on shoot
+multishot
+explode/smoke train on beat enemy
+
+change horizon/FOV based on speed
+
+particles coming out of engine
+
+
+
+camera:
+follow player ship
+
+controls:
+wasd, shift to strafe
+	on mobile: left stick wasd, right side shift modifier
+
+
+auto shoot
+on kill enemy, particles (exp) to top of screen where a bar is charged
+when bar is full, show upgrade popup
+ 
+
+3x powerup slots
+3x weapon slots
+
+weapons:
+gun(default)
+	shoots 1 bullet
+	upgrade shoots 3 bullet
+flamethrower
+	(lots of bullets, slow moving, rise in Z, have friction in xy, don't despawn on collide, low damage)
+	upgrade increases bullet count/speed/damage
+missile
+	shoots 1 bullet that makes explosion on hit, accelerates as it moves
+	upgrade bigger explosion, faster missile, faster fire rate
+mine
+	drops a mine that does big explosion
+	upgrade faster drop rate
+sword
+	shoots bullet that doesn't despawn on hit
+	upgrade more damage, faster fire rate
+beam
+	damage over time to drop point
+	upgrade bigger area, more damage
+shotgun
+	shoots lots of bullets in short cone, short duration
+	upgrade faster fire rate
+machine gun
+	shots bullets progressively in an arc
+	upgrade 2 arcs 
+
+
+starting UI:
+scrolling parallax menu with side view of ship (and retro jam logo)
+on click, flash logo, ship move L->R
+
+show 4x4 grid of weapons, "?" if not unlocked
+allow selection 
+
+
+
+---
+infinte mode
+---
+
+
+on hit particle
+on ko smoke particle
+on spawn particle
+level up bar
+
+level up picker
+
+player HP on hit
+
+main menu
+
+sounds
+
+sprites
+
+difficulty tweaking
+
+screen shake
+
+animate/easings
+
+cutscene
+
+backport into libs?
+
+
+blog:
+
+mode 7, show space harrier && mario kart
+show how to map from tex-> screen
+show how to map from screen-> tex
+
+
+mode7 vs 3d plane
+	is cropped on Z
+	can't be tilted
+	can be infinite
+
+
+collisions using spatial hash
+
+ECS, objects are ints 
+
+sakurai params video
+	flame vs bullt
+	
+
+

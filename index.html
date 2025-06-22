@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game Jam</title>
+  </head>
+	<script type="module" >
+        import {init} from "./build/src/demo.mjs";
+        window.onload = init; 
+    </script>
+  <body style="margin: 0px; overflow: hidden; width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center; background: rgb(0, 0, 0); image-rendering: pixelated; user-select: none; touch-action: none;">
+    <img src="./media/loading.png" id="imgLoading" style="height:100%;" >
+    <canvas id="canvas" width="320" height="270" style="height:0%;"></canvas>
+    <img src="./media/tiles.png" id="tiles" style="display: none;"/>
+    <img src="./media/menus.png" id="menus" style="display: none;"/>
+    <img src="./media/level1.png" id="level1" style="display: none;"/>
+    <img src="./media/level2.png" id="level2" style="display: none;"/>
+    <img src="./media/level3.png" id="level3" style="display: none;"/>
+    <img src="./media/level4.png" id="level4" style="display: none;"/>
+    <img src="./media/level5.png" id="level5" style="display: none;"/>
+  </body>
+</html>
